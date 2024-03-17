@@ -1,14 +1,4 @@
 @charset "utf-8";
-/*
-Template Name: Chillaid
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Layout CSS
-*/
-
 @import url("fontawesome-free/css/fontawesome-all.min.css");
 @import url("framework.css");
 
@@ -170,20 +160,11 @@ File: Layout CSS
 #copyright{padding:20px 0;}
 #copyright *{margin:0; padding:0;}
 
-
-/* Transition Fade
-This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
-If you don't want it to fade all elements, you have to list the ones you want to be faded individually
-Delete it completely to stop fading
 --------------------------------------------------------------------------------------------------------------- */
 *, *::before, *::after{transition:all .3s ease-in-out;}
 #mainav form *{transition:none !important;}
 
 
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
@@ -423,10 +404,6 @@ tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color
 table a, #comments a{background-color:inherit;}
 
 
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
