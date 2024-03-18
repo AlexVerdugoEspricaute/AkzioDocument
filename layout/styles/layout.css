@@ -69,7 +69,7 @@
 
 .pr-charts .pr-chart-ctrl{display:block; float:left; width:25%; min-height:200px;}
 .pr-charts .pr-chart-ctrl .pr-chart{display:block; position:relative; width:100%; margin:0 0 20px 0; text-align:center;}
-.pr-charts .pr-chart-ctrl .pr-chart canvas{display:block; margin:0 auto; padding:0; vertical-align:top;}
+.pr-charts .pr-chart-ctrl .pr-chart canvas{display:block; margin:0 auto; padding:0;}
 .pr-charts .pr-chart-ctrl .pr-chart i{position:absolute; top:0; left:0; width:100%; height:200px; line-height:200px; font-size:18px; font-style:normal;}/* Must have same height & line height as set in the javascript size element to vertical align centre */
 .pr-charts .pr-chart-ctrl p{margin:0; padding:0; text-transform:uppercase;}
 
@@ -161,7 +161,7 @@
 #copyright *{margin:0; padding:0;}
 
 --------------------------------------------------------------------------------------------------------------- */
-*, *::before, *::after{transition:all .3s ease-in-out;}
+*, *::before, *::after{transition:all 0.9s ease-in-out;}
 #mainav form *{transition:none !important;}
 
 
@@ -319,12 +319,11 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 
 
 /* Content Area */
-.elements article{color:#474747; background-color:#FFFFFF; box-shadow:0px 0px 15px rgba(0,0,0,.3);}
+.elements article{color:#474747; background-color:#FFFFFF; box-shadow:0px 0px 15px rgba(0,0,0,.3); transition: 0.9s, color 0.9s;}
 .elements article:hover{color:#FFFFFF; background-color:#97A9BD;}/* Default */
-.elements article a i{color:#FFFFFF; background-color:#97A9BD;}/* Default */
+.elements article a i{color:#FFFFFF; background-color:#97A9BD; transition: 0.9s, color 0.9s; }
 .elements article:hover a i{color:#97A9BD; background-color:#FFFFFF;}/* Default */
 
-/* ###### DELETE THE FOLLOWING IF ONLY THE DEFAULT COLOUR IS REQUIRED ###### */
 #introblocks .elements li article{color:#FFFFFF; background-color:#97A9BD;}/* Blue */
 #introblocks .elements li article a i{color:#97A9BD; background-color:#FFFFFF;}/* Blue */
 #introblocks .elements li article:hover{color:#474747; background-color:#FFFFFF !important;}
@@ -493,4 +492,21 @@ table a, #comments a{background-color:inherit;}
 
 	.font-x2{font-size:1.6rem;}
 	.font-x3{font-size:1.8rem;}
+}
+
+a { 
+    color:#A5A6AA;
+    text-decoration: none;
+    transition: all 0.9s ease; 
+}
+a:hover { color:#616161; }
+.container-fluid { max-width: 1770px; }
+.tm-container-small { max-width: 1050px; }
+.btn { border-radius: 0; }
+.btn-primary {
+    background-color: #616161;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 50px 14px;
+    font-size: 1.2rem;
 }
